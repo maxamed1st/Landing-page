@@ -13,7 +13,7 @@ header {
 header h1 {
     color: #f9faf8;
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 800;
 }
 nav ul {
     display: flex;
@@ -32,7 +32,6 @@ nav ul li {
 }
 #media {
     display: flex;
-    align-items: stretch;
     padding-bottom: 20px;
     margin-top: 40px;
     gap: 2em;
@@ -41,20 +40,43 @@ nav ul li {
     flex: auto;
     display:flex;
     justify-content: center;
+    align-items: center;
     background-color: gray;
     width: 522px;
     height: 236px;
     margin-left: 20px;
-
-}
-#media #image #txt {
-    align-self: center;
 }
 button {
-    background-color: lightskyblue;
+    background-color: rgb(0, 153, 255);
     border: 0;
     border-radius: 12px;
     color: #f9faf8;
     width: 126px;
     height: 36px;
+}
+.middle {
+    display: flex;
+    flex-flow: column nowrap;
+}
+#top-middle div {
+    flex: 1;
+    align-self: center;
+}
+#top-middle h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+#boxes {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    gap: 2em;
+}
+.box {
+    flex: auto;
+    width: 164px;
+    height: 164px;
+    border: 3px solid #3882f6;
+    border-radius: 2em;
 }
